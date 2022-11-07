@@ -7,4 +7,6 @@ router.get("/all",userController.allUsers);
 
 router.get("/random",userController.getRandomUser);
 
+router.post("/save", userController.saveUser);
+
 module.exports = router;
