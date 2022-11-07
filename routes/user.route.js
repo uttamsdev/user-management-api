@@ -5,4 +5,6 @@ const router = express.Router();
 
 router.get("/all",userController.allUsers);
 
+router.get("/random",userController.getRandomUser);
+
 module.exports = router;
