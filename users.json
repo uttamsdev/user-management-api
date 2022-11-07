@@ -1,23 +1,23 @@
 [
   {
     "id": 1,
-    "gender": "kdx",
+    "gender": "Male",
     "name": "komol Saha",
-    "contact": "xx",
+    "contact": "+88015455555",
     "address": "Pabna, Dhaka, Bangladesh",
     "photoURL": "https://i.ibb.co/WFLj4QK/10.png"
   },
   {
     "id": 8,
-    "gender": "nunuX",
+    "gender": "Male",
     "name": "komol Saha",
-    "contact": "xx",
+    "contact": "+88054555556",
     "address": "Pabna, Dhaka, Bangladesh",
     "photoURL": "https://i.ibb.co/WFLj4QK/10.png"
   },
   {
     "id": 9,
-    "gender": "dd",
+    "gender": "Male",
     "name": "Uttam Saha",
     "contact": "+8014000144156",
     "address": "Pabna, Dhaka, Bangladesh",
@@ -25,7 +25,7 @@
   },
   {
     "id": 10,
-    "gender": "dd",
+    "gender": "Male",
     "name": "Uttam Saha",
     "contact": "+8014000144156",
     "address": "Pabna, Dhaka, Bangladesh",
