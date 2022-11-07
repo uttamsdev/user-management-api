@@ -9,4 +9,6 @@ router.get("/random",userController.getRandomUser);
 
 router.post("/save", userController.saveUser);
 
+router.delete("/delete/:id", userController.deleteUser)
+
 module.exports = router;

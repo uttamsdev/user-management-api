@@ -21,4 +21,15 @@ const saveUser = (req, res) => {
   writeUsers(users);
   res.send(users);
 };
-module.exports = { allUsers, getRandomUser, saveUser };
+
+const deleteUser = (req, res) => {
+  const id = req.params.id;
+  console.log("delte id is: ",id);
+  const users = readUsers();
+  //console.log(users);
+  const newUser = users.filter(user => user.id !== parseInt(id));
+  //console.log(newUser);
+  writeUsers(newUser);
+  res.send(newUser);
+}
+module.exports = { allUsers, getRandomUser, saveUser, deleteUser};
