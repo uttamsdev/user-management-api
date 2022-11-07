@@ -24,7 +24,7 @@ const saveUser = (req, res) => {
 
 const deleteUser = (req, res) => {
   const id = req.params.id;
-  console.log("delte id is: ",id);
+  //console.log("delte id is: ",id);
   const users = readUsers();
   //console.log(users);
   const newUser = users.filter(user => user.id !== parseInt(id));
@@ -32,4 +32,26 @@ const deleteUser = (req, res) => {
   writeUsers(newUser);
   res.send(newUser);
 }
-module.exports = { allUsers, getRandomUser, saveUser, deleteUser};
+
+const updateUser = (req, res) => {
+  let updatedUsers = [];
+  let users = readUsers();
+  const id = req.params.id;
+  let newUser = req.body;
+  let updated = users.find(user => user.id === parseInt(id));
+  updated.id = parseInt(id);
+  updated.gender = newUser.gender;
+  updated.name = newUser.name;
+  updated.contact = newUser.contact;
+  updated.address = newUser.address;
+  updated.photoURL = newUser.photoURL;
+
+  if(updated){
+    //users.push(updated);
+    writeUsers(users);
+  }
+  //console.log(updated);
+
+  res.send(users);
+}
+module.exports = { allUsers, getRandomUser, saveUser, deleteUser, updateUser};
